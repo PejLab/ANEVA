@@ -17,7 +17,7 @@ if nargin == 0
     AnalysisLabel= 'Test_run';
     SNP_frq_file = ['01_Data/Sample_Allelefrequency_Data/Sample_SNP_Allelefrequencies.txt'];    
 end
-S01_Outputfile = ['02_Results/S01_Prepare_ASE_data/' AnalysisLabel '/Common_SNPs.mat'];
+S01_Outputfile = ['02_Results/' AnalysisLabel '/Common_SNPs.mat'];
 
 
 disp('Reading in Frqs...')
@@ -43,7 +43,9 @@ try
     save(File, 'jSNPcommon', 'MetaData');
     
     if (length(bi)/N)<.9
-       error(['Less than 90% of the aeSNPs were found in ' SNP_frq_file '. if you are sure that is fine, comment out this error check line in the code'] ) 
+        warning on
+        beep
+       warning('Less than 90% of the aeSNPs were found in SNP frquency file.') 
     end
      
 catch errr

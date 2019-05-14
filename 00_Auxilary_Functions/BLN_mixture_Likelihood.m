@@ -12,7 +12,7 @@ LW = W/sum(W);
 Mu = Logit(P);
 V  = Std.^2;
 for i = length(W):-1:1
-    L(:,i) = Pej_pdf_BLN(X, Xc, Mu(i), V(i), false)*LW(i);
+    L(:,i) = Pej_pdf_BLN(X, Xc, Mu(i), V(i))*LW(i);
 end
 NLL = -sum(log(sum(L,2)));%+abs(sum(W)-1);
 end

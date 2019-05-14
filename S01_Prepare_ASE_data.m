@@ -21,7 +21,7 @@ if nargin == 0
     AnalysisLabel= 'Test_run';
 end
 
-OutFolder = ['02_Results/S01_Prepare_ASE_data/' AnalysisLabel];
+OutFolder = ['02_Results/' AnalysisLabel];
 mkdir(OutFolder);
 
 delete([OutFolder '/S01_Prepare_ASE_data_run.log']);
@@ -37,7 +37,6 @@ if nargin == 0
     FileNamePattern = '01_Data/AE_Sample_Data/*.txt';
 end
 
-
 %% Run the script
 try
     S01_Prepare_ASE_data_(FileNamePattern, minOccurance, OutFolder)
@@ -49,9 +48,9 @@ end
 end
 
 function S01_Prepare_ASE_data_(FileNamePattern, minOccurance, OutFolder)
-%% Constants/ Input file format
+%% Constants/ Input file format (PARAMETERS)
 
-% Mandatory fields
+% Mandatory fields ======================
 ColumnLabel_for_uniqueID   = 'VARIANT_ID';  % Label for the column carrying a unique varinat ID for aeSNP.      **Edit this to match your data**
 ColumnLabel_for_refCount   = 'REF_COUNT';   % Label for the column carrying ref. allele count at aeSNP.         **Edit this to match your data**
 ColumnLabel_for_altCount   = 'ALT_COUNT';   % Label for the column carrying alt. allele count at aeSNP.         **Edit this to match your data**
