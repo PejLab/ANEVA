@@ -1,4 +1,6 @@
-# ANEVA
+# ANEVA [![DOI](https://zenodo.org/badge/183066057.svg)](https://zenodo.org/badge/latestdoi/183066057)
+
+
 ANalysis of Expression VAriance
 
 Package developed by: Pejman Mohammadi (firstname@Scripps.edu). See our [preprint](https://www.biorxiv.org/content/biorxiv/early/2019/05/09/632794.full.pdf) for method descritions.
