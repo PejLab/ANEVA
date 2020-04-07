@@ -11,6 +11,6 @@ To run the demo you have to first decompress all data files (```gunzip -r ANEVA/
 
 
 ## Further notes:
-- If you don't know how to **generate ASE data**, you can start [here](https://stephanecastel.wordpress.com/2017/02/15/how-to-generate-ase-data-with-phaser/) and [here](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0762-6). Note: This model assumes variant level ASE data and is not compatible with haplotypic read counts such as Phaser data.
+- If you don't know how to **generate ASE data**, you can start [here](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0762-6). Note: This model assumes variant level ASE data and is not compatible with haplotypic read counts such as Phaser data.
 
 - You can download our **pre-calculated Vg estimates** for available datasets at [Datasets/Reference_Vg_Estimates](https://github.com/PejLab/Datasets/tree/master/Reference_Vg_Estimates).
