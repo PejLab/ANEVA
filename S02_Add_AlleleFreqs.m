@@ -31,7 +31,7 @@ function Add_AlleleFreqs(File, Frqs)
 try
     load(File);
    
-    [~, ai, bi] = intersect(tID,Frqs.snp_ids);
+    [~, ai, bi] = intersect(jSNPcommon.uniqueID,Frqs.snp_ids);
     
     N = length(jSNPcommon.uniqueID);
     jSNPcommon.REFfreq = nan(N,1);
